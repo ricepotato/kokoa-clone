@@ -96,10 +96,13 @@
 
 .message .message__bubble {
   background-color: white;
+  display: block;
   box-shadow: rgba(50, 50, 93, 0.3) 0px 8px 16px -8px,
     rgba(50, 50, 93, 0.024) 0px -6px 16px -6px;
   padding: 10px 20px;
   border-radius: 40px;
+  color: white;
+  font-weight: 600;
 }
 
 .incomming-message .message__author {
@@ -111,8 +114,10 @@
 
 .incomming-message .message__bubble {
   border-bottom-left-radius: 0;
+  background-image: linear-gradient(to right, #56ccf2, #2f80ed);
 }
 
 .sent-message .message__bubble {
   border-bottom-right-radius: 0;
+  background-image: linear-gradient(to right, #6190e8, #a7bfe8);
 }

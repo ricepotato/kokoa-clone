@@ -17,3 +17,7 @@ https://stripe.com/
 ## background desine
 
 https://www.toptal.com/designers/subtlepatterns/
+
+## gradient
+
+https://uigradients.com/
