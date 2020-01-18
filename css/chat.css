@@ -52,6 +52,18 @@
   transition: opacity 0.2s ease-in-out;
 }
 
+@keyframes float {
+  0% {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  50% {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.4);
+  }
+  100% {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+  }
+}
+
 .chat__write {
   bottom: 0px;
   margin: 0 auto;
@@ -67,10 +79,9 @@
 .chat__write:focus {
   outline: none;
   width: 80%;
-
   transform: translateY(-100px);
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
   border-radius: 40px;
+  animation: float 2s linear infinite forwards;
 }
 
 .chat__write:focus ~ .chat__icon {
@@ -157,4 +168,34 @@
 .sent-message .message__bubble {
   border-bottom-right-radius: 0;
   background-image: linear-gradient(to right, #6190e8, #a7bfe8);
+}
+
+@keyframes incommingAnim {
+  from {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.incomming-message {
+  animation: incommingAnim 0.5s ease-out forwards;
+}
+
+@keyframes sentAnimation {
+  from {
+    opacity: 0;
+    transform: translateX(200px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.sent-message {
+  animation: sentAnimation 0.5s ease-out forwards;
 }
