@@ -1,5 +1,14 @@
+.header-wrapper {
+  background-color: white;
+  padding: 5px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .chats-body {
   padding: 0;
+  padding-top: 100px;
 }
 
 .chats-body .header,
@@ -7,7 +16,7 @@
   padding: 0px 20px;
 }
 
-.chat-screen {
+.chats-body {
   background-image: url("../images/blue-snow.png");
   min-height: 100vh;
 }
