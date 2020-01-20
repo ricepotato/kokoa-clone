@@ -18,7 +18,7 @@ https://www.pinterest.co.kr/
 
 https://stripe.com/
 
-## background desine
+## background design
 
 https://www.toptal.com/designers/subtlepatterns/
 
